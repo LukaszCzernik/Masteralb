@@ -1,6 +1,18 @@
-.header-logo{
+.header-logo {
   text-align: center;
   opacity: 0.2;
-  margin-top: 54px;
-  margin-left: 80px;
+  margin: 54px 80px;
+}
+
+
+
+// Responsiveness
+
+@include media('<sm') {
+  .header-logo {
+    margin: 0;
+  }
+  .header-logo img {
+    margin: 30px;
+  }
 }
