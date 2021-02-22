@@ -1,17 +1,17 @@
 body {
   background-image: url('../assets/images/background-img.png');
-  background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
   margin: 0 auto;
-}
-
-
-
-// Responsiveness
-
-@include media('<sm') {
-  body {
+  
+  @include media('>=md') {
+    background-size: cover;
+  }
+  
+  @include media('<md') {
     background-size: auto;
   }
 }
+
+
+
