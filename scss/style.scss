@@ -1,12 +1,15 @@
 @import "global/include-media";
 @import "global/breakpoints";
-@import "global/reset";
-@import "global/global";
-
-
-@import "global/typography";
+@import "global/fonts";
 @import "global/colors";
+@import "global/reset";
+
+
+
+@import "global/global";
+@import "global/typography";
 
 
 @import "page/header/header";
 @import "page/footer/footer";
+@import "page/page-form/page-form";
