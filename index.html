@@ -38,9 +38,9 @@
                     <input type="email" placeholder="Email" required class="input-background">
                   </div>
                   <div class="page-form__form-wrapper">
-                    <img src="assets/images/location-icon.png" alt="Location icon" class="form-icon">
+                    <img src="assets/images/location-icon.png" alt="Location icon" class="form-icon__location">
                     <select name="select" id="select" required class="input-background">
-                      <option value="Your Location" selected>Your Location</option>
+                      <option value="Your Location" selected disabled>Your Location</option>
                       <option value="Poland">Poland</option>
                       <option value="Russia">Russia</option>
                       <option value="France">France</option>
@@ -50,8 +50,9 @@
                     </select>
                   </div>
                   <div class="page-form__form-checkbox">
-                    <input type="checkbox" id="terms" required>
-                    <label for="terms">I have read and accept the terms of use.</label>
+                    <label for="terms" class="terms-label">I have read and accept the terms of use.</label>
+                    <input type="checkbox" id="terms" required class="terms-input">
+                    <span class="checkmark"></span>
                   </div>
                   <div class="page-form__form-submit">
                     <input type="submit" value="Sign up" class="submit">

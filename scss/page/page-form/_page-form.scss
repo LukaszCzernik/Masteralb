@@ -24,17 +24,54 @@
   &-content {
     padding: 21px;
 
-    input, select {
+    input, select, label {
       width: 100%;
       margin: 0;
       border: 0;
+      color: $color-silver-chalice;
+
+      &::placeholder {
+        color: $color-silver-chalice;
+        opacity: 1;
+      }
+
+      &.submit {
+        font-size: 24px;
+        color: $color-white;
+        line-height: 1.2;
+        text-shadow: 0.559px 0.829px 0px $color-green-shadow;
+        background-color: $color-limeade;
+        border-radius: 3px;
+        border: 1px solid $color-limeade;
+        box-shadow: 0px 1px 0px 0px $color-white-gradient,inset 0px 1px 1px 0px $color-white-bright-gradient;
+        padding: 10px;
+      }
+
+      &.terms-input {
+        border: 1px solid $color-silver;
+        border-radius: 3px;
+        box-shadow: 0px 2px 0px 0px $color-white-gradient,inset 0px 0px 0px 1px $color-white-brighter-gradient;
+        width: 21px;
+        height: 22px;
+      }
+
+      &.terms-label {
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        padding-left: 26px;
+      }
     }
 
     img {
-      margin-left: 19px;
       border-right: 1px solid $color-alto;
-      margin-right: 18px;
       padding-right: 20px;
+      margin: 0 18px 0 19px;
+
+      &.form-icon__location {
+        padding-right: 27px;
+        margin: 0 15px 0 22px;
+      }
     }
 
     .page-form__form-wrapper {
@@ -49,9 +86,62 @@
     .input-background {
       background-color: $color-wild-sand;
     }
+
+    .page-form__form-checkbox {
+      display: flex;
+      margin-bottom: 17px;
+      position: relative;
+
+      & input {
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+
+        &:hover ~ .checkmark {
+          background-color: $color-silver;
+        }
+
+        &:checked ~ .checkmark:after {
+          display: block;
+        }
+  
+      }
+      
+      & .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 21px;
+        height: 22px;
+        border: 1px solid $color-silver;
+        box-shadow: 0px 2px 0px 0px $color-white-gradient,inset 0px 0px 0px 1px $color-white-brighter-gradient;
+        border-radius: 3px;
+       
+          &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          width: 13px;
+          height: 14px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) ;
+          box-shadow: 0px 1px 0px 0px $color-white-gradient,inset 0px 1px 1px 0px $color-white-bright-gradient;
+          border-radius: 3px;
+          background-color: #3B9A00;
+          }
+      }
+
+      .terms-label {
+        cursor: pointer;
+      }
+    }
+
+    .page-form__form-submit {
+      display: block;
+    }
   }
 }
-
 
 
 

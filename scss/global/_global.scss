@@ -21,5 +21,11 @@ body {
   &-column {
     width: 40%;
     padding: 0 40px;
+
+    @include media('<md') {
+      width: 90%;
+      padding: 0 15px;
+    }
   }
 }
+
