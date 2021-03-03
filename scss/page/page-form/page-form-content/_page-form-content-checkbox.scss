@@ -1,0 +1,58 @@
+.page-form__content-checkbox {
+  $checkbox: &;
+  display: flex;
+  margin-bottom: 17px;
+  position: relative;
+
+  &-label {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    padding-left: 26px;
+    cursor: pointer;
+  }
+
+  &-input {
+    border: 1px solid $color-silver;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 0 $color-white-gradient,inset 0 0 0 1px $color-white-brighter-gradient;
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+
+    &:checked ~ #{$checkbox}-checkmark:after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 22px;
+    border: 1px solid $color-silver;
+    box-shadow: 0 2px 0 0 $color-white-gradient,inset 0 0 0 1px $color-white-brighter-gradient;
+    border-radius: 3px;
+   
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      width: 13px;
+      height: 14px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) ;
+      box-shadow: 0 1px 0 0 $color-white-gradient,inset 0 1px 1px 0 $color-white-bright-gradient;
+      border-radius: 3px;
+      background-color: $color-limeade;
+      transition: opacity 0.2s, visibility 0.2s;
+    }
+  }
+}

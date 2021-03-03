@@ -19,8 +19,11 @@ body {
 
   &-column {
     width: 43%;
-    max-width: 720px;
     padding: 0 40px;
+    
+    @include media('>=md') {
+      max-width: 720px;
+    }
 
     @include media('<md') {
       width: 100%;

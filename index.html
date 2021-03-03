@@ -18,28 +18,29 @@
       <div class="container-column ">
         <section class="page-form">
           <h2 class="page-form__heading">Register Form</h2>
-          <div class="form-background">
+          <div class="page-form__background">
             <form action="" class="page-form__form">
-                <div class="form-content">
-                  <div class="page-form__form-wrapper">
-                    <img src="assets/images/user-icon.png" alt="User icon" class="form-icon">
-                    <input type="text" placeholder="Username" required class="input-background">
+                <div class="page-form__content">
+                  <div class="page-form__content-wrapper">
+                    <img src="assets/images/user-icon.png" alt="User icon" class="page-form__content-icon">
+                    <input type="text" placeholder="Username" required class="page-form__content-input">
                   </div>
-                  <div class="page-form__form-wrapper">
-                    <img src="assets/images/lock-icon.png" alt="Lock icon" class="form-icon">
-                    <input type="password" placeholder="Password" required class="input-background">
+                  <div class="page-form__content-wrapper">
+                    <img src="assets/images/lock-icon.png" alt="Lock icon" class="page-form__content-icon">
+                    <input type="password" placeholder="Password" required class="page-form__content-input">
                   </div>
-                  <div class="page-form__form-wrapper">
-                    <img src="assets/images/lock-icon.png" alt="Lock icon" class="form-icon">
-                    <input type="password" placeholder="Confirm Password" required class="input-background">
+                  <div class="page-form__content-wrapper page-form__content-wrapper">
+                    <img src="assets/images/lock-icon.png" alt="Lock icon" class="page-form__content-icon">
+                    <input type="password" placeholder="Confirm Password" required class="page-form__content-input">
                   </div>
-                  <div class="page-form__form-wrapper">
-                    <img src="assets/images/envelope-icon.png" alt="Envelope icon" class="form-icon">
-                    <input type="email" placeholder="Email" required class="input-background">
+                  <div class="page-form__content-wrapper">
+                    <img src="assets/images/envelope-icon.png" alt="Envelope icon" class="page-form__content-icon">
+                    <input type="email" placeholder="Email" required class="page-form__content-input">
                   </div>
-                  <div class="page-form__form-wrapper">
-                    <img src="assets/images/location-icon.png" alt="Location icon" class="form-icon-location">
-                    <select name="select" id="select" required class="input-background">
+                  <div class="page-form__content-wrapper">
+                    <img src="assets/images/location-icon.png" alt="Location icon" class="page-form__content-icon page-form__content-icon--location">
+                    <span class="page-form__content-select-arrow"></span>
+                    <select name="select" id="select" required class="page-form__content-select">
                       <option value="Your Location" selected disabled>Your Location</option>
                       <option value="Poland">Poland</option>
                       <option value="Russia">Russia</option>
@@ -49,13 +50,13 @@
                       <option value="United States">United States</option>
                     </select>
                   </div>
-                  <div class="page-form__form-checkbox">
-                    <label for="terms" class="terms-label">I have read and accept the terms of use.</label>
-                    <input type="checkbox" id="terms" required class="terms-input">
-                    <span class="checkmark"></span>
+                  <div class="page-form__content-checkbox">
+                    <label for="terms" class="page-form__content-checkbox-label">I have read and accept the terms of use.</label>
+                    <input type="checkbox" id="terms" required class="page-form__content-checkbox-input">
+                    <span class="page-form__content-checkbox-checkmark"></span>
                   </div>
-                  <div class="page-form__form-submit">
-                    <input type="submit" value="Sign up" class="submit">
+                  <div class="page-form__content-submit">
+                    <input type="submit" value="Sign up" class="page-form__content-submit-button">
                   </div>
                 </div>
             </form>
@@ -64,8 +65,6 @@
       </div>
     </div>
   </main>
-  <footer class="footer">
-    
-  </footer>
+  <footer class="footer"></footer>
 </body>
 </html>
