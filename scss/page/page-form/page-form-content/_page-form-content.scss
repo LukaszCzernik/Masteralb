@@ -1,0 +1,109 @@
+.page-form__content {
+  padding: 21px;
+
+  &-input,
+  &-select,
+  &-checkbox-label {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    color: $color-silver-chalice;
+
+    &::placeholder {
+      color: $color-silver-chalice;
+      opacity: 1;
+    }
+  }
+
+  &-select,
+  &-input {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-wrapper {
+    padding: 8px 0;
+    margin-bottom: 17px;
+    border: 1px solid $color-silver;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 0 $color-white,inset 0 0 0 1px $color-white;
+    display: flex;
+  }
+
+  &-icon {
+    border-right: 1px solid $color-alto;
+    padding-right: 20px;
+    margin: 0 18px 0 19px;
+
+    @include media('<md') {
+      width: 17px;
+      height: 17px;
+    }
+     
+    &--location {
+      padding-right: 27px;
+      margin: 0 15px 0 22px;
+    }
+  }
+
+  &-input {
+    background-color: $color-wild-sand;
+    padding-right: 20px;
+  }
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &-select {
+    background-color: $color-wild-sand;
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &-arrow {
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 17px;
+      pointer-events: none;
+      width: 0; 
+      height: 0; 
+
+      border-top: 10px solid $color-silver-chalice;
+
+      @include media('<md') {
+        top: 14px;
+      }
+    }
+  }
+
+  &-submit {
+    &-button {
+      font-size: 24px;
+      color: $color-white;
+      line-height: 1.2;
+      text-shadow: 0.559px 0.829px 0 $color-green-shadow;
+      background-color: $color-limeade;
+      border-radius: 3px;
+      border: 1px solid $color-limeade;
+      box-shadow: 0 1px 0 0 $color-white-gradient,inset 0 1px 1px 0 $color-white-bright-gradient;
+      padding: 10px;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+      transition:  background-color 0.2s;
+      outline: none;
+
+      &:hover {
+        background-color: $color-green-leaf-darker;
+      }
+    }
+  }
+}

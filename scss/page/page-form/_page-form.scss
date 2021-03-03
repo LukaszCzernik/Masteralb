@@ -1,0 +1,20 @@
+.page-form {
+  margin-top: 15px;
+
+  &__heading {
+    text-align: center;
+    margin: 0 0 19px;
+  }
+
+  &__background {
+    background: $color-black-opacity;
+    border-radius: 5px;
+    padding: 19px;
+  }
+  
+  &__form {
+    border-radius: 3px;
+    background-color: $color-wild-sand;
+    box-shadow: 0 0 8.6px 1.4px $color-black-gradient;
+  }
+}

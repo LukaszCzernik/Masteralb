@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   max-width: 100%;
   margin: 0 auto;
+  font-family: $font-titillium;
   
   @include media('>=md') {
     background-size: cover;
@@ -13,5 +14,21 @@ body {
   }
 }
 
+.container {
+  display: flex;
 
+  &-column {
+    width: 43%;
+    padding: 0 40px;
+    
+    @include media('>=md') {
+      max-width: 720px;
+    }
+
+    @include media('<md') {
+      width: 100%;
+      padding: 0 5px;
+    }
+  }
+}
 
