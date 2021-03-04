@@ -1,5 +1,11 @@
-.page-form {
-  margin-top: 15px;
+.page-form  {
+  &--register-form {
+    margin-top: 15px;
+  }
+
+  &--send-email-form {
+    margin: 30px 0 47px 0;
+  }
 
   &__heading {
     text-align: center;

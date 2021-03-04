@@ -16,7 +16,7 @@
   <main class="main-content">
     <div class="container">
       <div class="container-column ">
-        <section class="page-form">
+        <section class="page-form page-form--register-form">
           <h2 class="page-form__heading">Register Form</h2>
           <div class="page-form__background">
             <form action="" class="page-form__form">
@@ -29,7 +29,7 @@
                     <img src="assets/images/lock-icon.png" alt="Lock icon" class="page-form__content-icon">
                     <input type="password" placeholder="Password" required class="page-form__content-input">
                   </div>
-                  <div class="page-form__content-wrapper page-form__content-wrapper">
+                  <div class="page-form__content-wrapper">
                     <img src="assets/images/lock-icon.png" alt="Lock icon" class="page-form__content-icon">
                     <input type="password" placeholder="Confirm Password" required class="page-form__content-input">
                   </div>
@@ -62,6 +62,34 @@
             </form>
           </div>
         </section>
+        <section class="page-form page-form--send-email-form">
+          <h2 class="page-form__heading">Send Email</h2>
+          <div class="page-form__background">
+            <form action="" class="page-form__form">
+              <div class="page-form__content">
+                <div class="page-form__content-wrapper">
+                  <img src="assets/images/user-icon.png" alt="User icon" class="page-form__content-icon">
+                  <input type="text" placeholder="Your Name" required class="page-form__content-input">
+                </div>
+                <div class="page-form__content-wrapper">
+                  <img src="assets/images/envelope-icon.png" alt="envelope icon" class="page-form__content-icon">
+                  <input type="email" placeholder="Your Email" required class="page-form__content-input">
+                </div>
+                <div class="page-form__content-message">
+                  <textarea id="textarea" cols="45" rows="11" placeholder="Type your message ..." class="page-form__content-message-textarea"></textarea>
+                </div>
+                <div class="page-form__content-checkbox">
+                  <label for="copy" class="page-form__content-checkbox-label">Send a copy to my Email</label>
+                  <input type="checkbox" id="copy" required class="page-form__content-checkbox-input">
+                  <span class="page-form__content-checkbox-checkmark"></span>
+                </div>
+                <div class="page-form__content-submit">
+                  <input type="submit" value="Send Email" class="page-form__content-submit-button">
+                </div>
+              </div>
+            </form>
+          </div>
+        </section> 
       </div>
     </div>
   </main>
