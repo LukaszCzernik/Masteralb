@@ -16,7 +16,8 @@
   }
 
   &-select,
-  &-input {
+  &-input,
+  &-message-textarea {
     &:focus {
       outline: none;
     }
@@ -29,6 +30,24 @@
     border-radius: 3px;
     box-shadow: 0 2px 0 0 $color-white,inset 0 0 0 1px $color-white;
     display: flex;
+  }
+
+  &-message {
+    border: 1px solid $color-silver;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 0 $color-white,inset 0 0 0 1px $color-white;
+    padding: 10px 16px 10px 16px;
+    margin-bottom: 17px;
+
+    &-textarea {
+      border: none;
+      background-color: $color-wild-sand;
+      resize: none;
+      line-height: 1.2;
+      font-size: 16px;
+      color: $color-silver-chalice;
+      width: 100%;
+    }
   }
 
   &-icon {
