@@ -1,8 +1,18 @@
 .page-form__content-checkbox {
   $checkbox: &;
   display: flex;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
   position: relative;
+
+  &--sign-in-form {
+    width: 100%;
+    margin-top: 13px;
+
+    @include media('<md') {
+      margin-top: 4px;
+      ;
+    }
+  }
 
   &-label {
     font-size: 16px;
@@ -10,6 +20,11 @@
     text-align: center;
     padding-left: 26px;
     cursor: pointer;
+    margin-top: 3px;
+    
+    &--sign-in-form {
+      padding-right: 30px
+    }
   }
 
   &-input {

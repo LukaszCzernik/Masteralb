@@ -10,12 +10,16 @@ body {
   }
   
   @include media('<md') {
-    background-size: auto;
+    background-size: cover;
   }
 }
 
 .container {
   display: flex;
+
+  @include media('<md') {
+    display: block;
+  }
 
   &-column {
     width: 43%;
@@ -26,9 +30,9 @@ body {
     }
 
     @include media('<md') {
-      width: 100%;
-      padding: 0 5px;
+      width: 96%;
+      padding: 0 5px 0 5px;
+      margin: 0 auto;
     }
   }
 }
-
