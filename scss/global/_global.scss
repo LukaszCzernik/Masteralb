@@ -17,6 +17,10 @@ body {
 .container {
   display: flex;
 
+  @include media('>lg') {
+    justify-content: center;
+  }
+
   @include media('<md') {
     display: block;
   }
