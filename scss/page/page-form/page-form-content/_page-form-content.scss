@@ -9,8 +9,8 @@
     border: 0;
     color: $color-silver-chalice;
 
-    @include media('>=md','<lg') {
-      font-size: 13px;
+    @include media('<lg') {
+      font-size: 12px;
     }
     
       &::placeholder {
@@ -51,6 +51,10 @@
       font-size: 16px;
       color: $color-silver-chalice;
       width: 100%;
+
+      @include media('<lg') {
+        font-size: 12px;
+      }
     }
   }
 
@@ -64,14 +68,27 @@
     }
   }
 
+  &-submit-buttons {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+    @include media('<lg') {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
   &-icon {
     border-right: 1px solid $color-alto;
     padding-right: 20px;
     margin: 0 18px 0 19px;
 
-    @include media('<md') {
+    @include media('<lg') {
       width: 17px;
       height: 17px;
+      padding-right: 17px;
+      margin: 0 17px 0 18px;
     }
      
     &--location {
@@ -122,6 +139,27 @@
     &--sign-in-form {
       width: 100%;
     }
+
+    &--recover-form-send {
+      width: 40%;
+
+
+      @include media('<lg') {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+      }
+    }
+
+    &--recover-form-done {
+      width: 40%;
+
+
+      @include media('<lg') {
+        width: 100%;
+        padding: 0;
+      }
+    }
     
     &-button {
       font-size: 24px;
@@ -146,6 +184,21 @@
       &:hover {
         background-color: $color-green-leaf-darker;
       }
+      
+      &--recover-form-button {
+        font-size: 18px;
+
+        &-disabled {
+          font-size: 18px;
+          background-color: $color-mantis;
+          border-color: $color-mantis;
+          cursor: unset;
+
+          &:hover {
+            background-color: $color-mantis;
+          }
+        }
+       }
     }
   }
 }
