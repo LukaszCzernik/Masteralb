@@ -7,6 +7,14 @@
     margin: 30px 0 47px 0;
   }
 
+  &--sign-in-form {
+    margin-top: 16px;
+
+    @include media('<md') {
+      margin-bottom: 25px;
+    }
+  }
+
   &__heading {
     text-align: center;
     margin: 0 0 19px;

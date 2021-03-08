@@ -9,9 +9,13 @@
     border: 0;
     color: $color-silver-chalice;
 
-    &::placeholder {
-      color: $color-silver-chalice;
-      opacity: 1;
+    @include media('>=md','<lg') {
+      font-size: 13px;
+    }
+    
+      &::placeholder {
+        color: $color-silver-chalice;
+        opacity: 1;
     }
   }
 
@@ -47,6 +51,16 @@
       font-size: 16px;
       color: $color-silver-chalice;
       width: 100%;
+    }
+  }
+
+  &-checkbox-submit-buttons {
+    display: flex;
+    margin-bottom: 10px;
+
+    @include media('<lg') {
+      display: block;
+      margin-bottom: 0;
     }
   }
 
@@ -104,6 +118,11 @@
   }
 
   &-submit {
+
+    &--sign-in-form {
+      width: 100%;
+    }
+    
     &-button {
       font-size: 24px;
       color: $color-white;
@@ -119,6 +138,10 @@
       width: 100%;
       transition:  background-color 0.2s;
       outline: none;
+
+      &--sign-in-form {
+        width: 40%;
+      }
 
       &:hover {
         background-color: $color-green-leaf-darker;
