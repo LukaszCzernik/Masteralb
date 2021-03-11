@@ -3,7 +3,8 @@
     width: 100%;
   }
 
-  &--recover-form-send {
+  &--recover-form-send,
+  &--subscribe-form-subscribe {
     width: 40%;
 
     @include media('<lg') {
@@ -13,7 +14,8 @@
     }
   }
 
-  &--recover-form-done {
+  &--recover-form-done,
+  &--subscribe-form-thanks {
     width: 40%;
 
     @include media('<lg') {
@@ -46,7 +48,8 @@
       background-color: $color-green-leaf-darker;
     }
     
-    &--recover-form-button {
+    &--recover-form-button,
+    &--subscribe-form-button {
       font-size: 18px;
 
       &-disabled {
@@ -54,11 +57,21 @@
         background-color: $color-mantis;
         border-color: $color-mantis;
         cursor: unset;
-
+        
         &:hover {
           background-color: $color-mantis;
         }
       }
-     }
+    }
+
+    &--subscribe-form-button-thanks {
+      font-size: 18px;
+      border: 1px solid $color-mexican-red;
+      background-color: $color-mexican-red;
+
+      &:hover {
+        background-color: $color-tamarillo;
+      }
+    }
   }
 }
