@@ -73,6 +73,10 @@
     margin-bottom: 10px;
     justify-content: space-between;
 
+    &--subscribe-form {
+      margin-bottom: 0;
+    }
+
     @include media('<lg') {
       display: block;
       margin-bottom: 0;
@@ -125,11 +129,10 @@
       pointer-events: none;
       width: 0; 
       height: 0; 
-
       border-top: 10px solid $color-silver-chalice;
 
-      @include media('<md') {
-        top: 14px;
+      @include media('<lg') {
+        top: 13px;
       }
     }
   }
