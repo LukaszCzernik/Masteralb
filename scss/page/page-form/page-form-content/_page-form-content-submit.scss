@@ -15,7 +15,7 @@
   }
 
   &--recover-form-done,
-  &--subscribe-form-thanks {
+  &--subscribe-form-red {
     width: 40%;
 
     @include media('<lg') {
@@ -64,7 +64,7 @@
       }
     }
 
-    &--subscribe-form-button-thanks {
+    &--subscribe-form-button-red {
       font-size: 18px;
       border: 1px solid $color-mexican-red;
       background-color: $color-mexican-red;

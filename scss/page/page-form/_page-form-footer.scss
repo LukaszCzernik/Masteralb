@@ -1,9 +1,9 @@
-.footer {
+.page-form__footer {
   &-logo {
     text-align: center;
     opacity: 0.2;
 
-    &__img {
+    &-img {
       @include media('>=md','<lg') {
         width: 90%;
       }
